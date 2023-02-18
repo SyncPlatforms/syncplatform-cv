@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/** Font */
+$font_family: Poppins, 'sans-serif';
+$font_size_sm: 1.6rem;
+$font_size_md: 1.8rem;
+$font_size_lg: 2rem;
+$font_size_xlg: 3rem;
+$font_size_xxlg: 4rem;
+
+/** COLOR */
+$red: rgb(196, 0, 0);
+$black: #111;
+$white: #fff;
+$light_gray: #cecece;
+$yellow: #FFCA05;
+$dark_primary: #292934;
+$dark_secendary: #22222D;
+
+$padding: 75px;
+
+/** CSS Rest */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font_family;
+}
+
+/**** Header Section ****/
+header {
+    display: grid;
+    grid-template-columns: 1fr 4fr 7fr;
+    grid-template-rows: 60vh;
+}
+
+/** Column one */
+.header__sidebar {
+    background-color: $yellow;
+}
+
+/** Column two */
+.header__picture {
+    background-image: url(../images/soroush.jpg);
+    background-size: cover;
+    width: 100%;
+    background-clip: border-box;
+    background-position-y: 50%;
+}
+
+/** Column three */
+.header__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: $padding;
+}
+
+.header__info--head-up {
+    font-size: $font_size_xxlg;
+    font-weight: 400;
+}
+
+.header__info--head-down {
+    font-size: $font_size_xxlg;
+}
+
+.header__info--line {
+    border: 5px solid $yellow;
+    width: 25%;
+    margin: 1.4rem 0;
+}
+
+.header__info--text {
+    font-size: $font_size_xlg;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+
+/**** Main Section ****/
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 7fr;
+    color: $white;
+}
+
+.main__sidebar {
+    background-color: $yellow;
+}
+
+.main__contact {
+    background-color: $dark_primary;
+    padding: $padding;
+}
+
+/** About Me */
+.about-me__text {
+    font-size: $font_size_lg;
+    margin-top: 1rem;
+}
+
+/** Contact Me */
+.main__contact--contact-me {
+    margin: 75px 0;
+}
+
+.contact-info {
+    margin-top: 1rem;
+}
+
+.contact-head {
+    font-size: $font_size_lg;
+}
+.contact-text {
+    font-size: $font_size_md;
+}
+
+/** Hobbies */
+.main__contact--hobbies {
+    font-size: $font_size_lg;
+}
+
+.hobbies-icons {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    margin-top: 2rem;
+}
+
+.hobbies-icons > span > i {
+    color: $yellow;
+    font-size: $font_size_xxlg;
+    margin-bottom: 1rem;
+}
+
+.youtube {
+    background-color: $red;
+    color: $white;
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 0 2px;
+}
+
+/**** Information ****/
+.main__information {
+    background-color: $dark_secendary;
+    padding: $padding;
+}
+
+/** Education */
+.education-info {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.education-info__section {
+    font-size: $font_size_lg;
+    margin-right: 5rem;
+}
+
+/** Experience */
+.main__information--experience {
+    margin: 75px 0;
+}
+
+.main__information--experience-section {
+    margin-top: 1rem;
+}
+
+.experience-section__head {
+    font-size: $font_size_lg;
+    color: $white;
+}
+
+.experience-section__sec {
+    font-size: $font_size_md;
+}
+
+.experience-section__sec-first {
+    display: inline-block;
+    width: 130px;
+    background-color: $yellow;
+    color: $black;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+/**** Expertise ****/
+.expertise-chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.expertise-chart > span {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: $yellow;
+    color: $black;
+    border-radius: 50%;
+    border: 5px solid $white;
+    font-size: $font_size_xlg;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** Yellow Line after each Heading**/
+.head_line {
+    font-size: $font_size_xlg;
+}
+
+.head_line::after {
+    content: "_";
+    color: $yellow;
+}
