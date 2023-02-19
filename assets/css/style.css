@@ -200,6 +200,23 @@ main {
   align-items: center;
 }
 
+/**** Footer ****/
+footer {
+  grid-column: 1/-1;
+  background-color: #292626;
+  color: #fff;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 1.8rem;
+}
+
+.copyright-sign {
+  font-size: 2rem;
+  color: #FFCA05;
+}
+
 /** Yellow Line after each Heading**/
 .head_line {
   font-size: 3rem;

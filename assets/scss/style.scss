@@ -11,6 +11,7 @@ $font_size_xxlg: 4rem;
 /** COLOR */
 $red: rgb(196, 0, 0);
 $black: #111;
+$light_black: #292626;
 $white: #fff;
 $light_gray: #cecece;
 $yellow: #FFCA05;
@@ -218,6 +219,23 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/**** Footer ****/
+footer {
+    grid-column: 1 / -1;
+    background-color: $light_black;
+    color: $white;
+    text-align: center;
+}
+
+.copyright {
+    font-size: $font_size_md;
+}
+
+.copyright-sign {
+    font-size: $font_size_lg;
+    color: $yellow;
 }
 
 /** Yellow Line after each Heading**/
